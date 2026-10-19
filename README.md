@@ -45,6 +45,13 @@ light/dark setting (`prefers-color-scheme`), so they match a dark app theme in
 WKWebView and Android WebView. Nothing else changes: no scripts beyond the
 one-line class toggle, no external requests.
 
+## When you change style.css
+
+Bump the `?v=N` on every `<link rel="stylesheet" href="…style.css?v=N">` so returning
+visitors don't get a cached stylesheet:
+
+    sed -i '' 's/style\.css?v=[0-9]*/style.css?v=3/' *.html apps/*/*.html
+
 ## Before going live
 
 - Add a public phone number if you want one shown (commented block in `index.html`).
