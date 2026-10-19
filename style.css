@@ -149,6 +149,23 @@ a:focus-visible, button:focus-visible {
 }
 .row .content h3:first-child { margin-top: 0; }
 
+/* Product entry on the home page */
+
+.product a {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.product a:hover { color: var(--sea-dark); text-decoration: underline; }
+.product-status {
+  font-family: var(--sans);
+  font-size: .85rem;
+  color: var(--slate);
+  margin-left: .6rem;
+}
+
 /* Definition list for company facts */
 
 .facts {
