@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script>if(/[?&]embed(=|&|$)/.test(location.search))document.documentElement.classList.add('embed')</script>
+  <title>Carob Health privacy policy — Antere Software</title>
+  <meta name="description" content="Privacy policy for the Carob Health app: all data stays on your device, encrypted; no account, no server, no analytics.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Antere Software home">Ante<span class="re">re</span> <span class="co">Software</span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/support.html">Support</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>Carob Health privacy policy</h1>
+    <p class="meta">Version 2026-10-18. Effective 18 October 2026.</p>
+
+    <div class="prose">
+      <h2>The short version</h2>
+      <p>Carob Health keeps everything on your phone. There is no account, no server and no analytics. We — Antere Software Ltd — never receive your data, cannot see it, and cannot recover it. The only way data leaves your device is when you export or share it yourself.</p>
+      <p>The rest of this policy explains that in the detail the law and the app stores require.</p>
+
+      <h2>Who we are</h2>
+      <p>Carob Health is published by ANTERE SOFTWARE LTD, a company registered in the Republic of Cyprus under number HE 497996, with its registered office at Promachon Eleftherias 9, Rebeca Court, 2nd floor, Agios Athanasios, 4103 Limassol, Cyprus ("Antere", "we", "us"). Questions about this policy go to <a href="mailto:support@anteresoftware.com">support@anteresoftware.com</a>.</p>
+
+      <h2>What the app stores, and where</h2>
+      <p>The app stores the information you choose to enter. All of it lives in a database on your device, encrypted with AES-256 (SQLCipher); document files are encrypted separately with their own key. Both keys are generated on your device and kept in the system's secure storage (Keychain on iOS, encrypted storage on Android). Depending on what you use, this includes:</p>
+      <ul>
+        <li>Your profile: a name if you give one, sex at birth, year of birth, height and weight, blood group, skin and hair colour for your figure, allergies, and health conditions or physical particulars you record.</li>
+        <li>Medications and courses, with schedules, doses and stock counts.</li>
+        <li>Doctor visits and their outcomes, and a contact list of doctors and clinics you add.</li>
+        <li>Measurements such as blood pressure, blood sugar and weight.</li>
+        <li>Your health journal.</li>
+        <li>Documents you photograph or import — images and PDFs — and the text recognised from them.</li>
+        <li>Reminder settings, and a verifier for your PIN (not the PIN itself).</li>
+      </ul>
+      <p>Much of this is health data, which the GDPR treats as a special category. Because it is stored and processed only on your device under your control, we do not process it, and no one at Antere has access to it. The app does not back it up to iCloud or Google's cloud backup: it is excluded from system backups on both platforms.</p>
+
+      <h2>What leaves your device</h2>
+      <p>Nothing, unless you send it. Specifically:</p>
+      <ul>
+        <li><strong>Backups.</strong> You can export an encrypted backup file (.mhb), protected by a passphrase you choose. You decide where to save or send it. We cannot open it and cannot recover the passphrase.</li>
+        <li><strong>Reports and the allergy card.</strong> You can create a PDF report for a doctor or share your allergy card. These go wherever you send them. The allergy card contains only your allergies and their severity — no name and no other identifying details.</li>
+        <li><strong>Links and phone numbers.</strong> Tapping a doctor's phone number or address opens your phone or maps app. The app passes only that number or address.</li>
+      </ul>
+      <p>The app does not contain analytics, advertising or crash-reporting software, and does not send usage or diagnostic data to us. If we ever add optional diagnostics, it will be off by default, limited to anonymous technical information, never include your health data or documents, and this policy will be updated first.</p>
+
+      <h2>On-device processing</h2>
+      <p>Text recognition (OCR) for pharmacy stickers and documents, and barcode scanning, run entirely on your device. The images you scan are not uploaded anywhere. On iOS the app uses Apple's built-in Vision framework; on Android it uses Google's ML Kit together with the open-source Tesseract engine, with the recognition models bundled inside the app.</p>
+      <p>On Android, Carob Health does not request the Internet permission, so neither the app nor any library inside it is able to send data over the network.</p>
+      <!-- IF ML Kit (GoogleMLKit pods) remains in the iOS build, replace the paragraph above with:
+      <p>On Android, Carob Health does not request the Internet permission, so neither the app nor any library inside it is able to send data over the network. On iOS, Google's ML Kit library may send anonymous usage and diagnostic information about itself (such as a device identifier and whether recognition succeeded) to Google; it never sends the images or the recognised text. See Google's ML Kit terms for details.</p>
+      -->
+
+      <h2>Permissions the app asks for</h2>
+      <ul>
+        <li><strong>Camera</strong> — to photograph documents and scan pharmacy stickers and barcodes.</li>
+        <li><strong>Photos and files</strong> — to import existing images and PDFs, and to save backups where you choose.</li>
+        <li><strong>Notifications and exact alarms</strong> — for reminders at the time you set, including after the phone restarts.</li>
+        <li><strong>Face ID, Touch ID or fingerprint</strong> — to unlock the app without typing the PIN. The biometric check is done by the operating system; the app never sees your biometric data.</li>
+      </ul>
+      <p>Each permission is optional. Declining it turns off the related feature and nothing else.</p>
+
+      <h2>Deleting your data</h2>
+      <p>Settings → Delete everything removes the database, all document files, both encryption keys, your settings and all scheduled reminders. Uninstalling the app has the same effect. Backup files and reports you saved or sent elsewhere are outside the app, and deleting them is up to you.</p>
+
+      <h2>Your rights</h2>
+      <p>The GDPR gives you rights of access, rectification, erasure, restriction, portability and objection. For Carob Health, you exercise all of them directly in the app: everything it holds is visible on screen, editable, exportable as a backup, and deletable. We hold no copy of your data and cannot identify you from it, so there is nothing further for us to provide or delete — but if you have a question or believe something is wrong, write to <a href="mailto:support@anteresoftware.com">support@anteresoftware.com</a>. If you email us, we process your message and address to answer you, as described in our <a href="/privacy.html">website privacy policy</a>.</p>
+      <p>You can complain to the Office of the Commissioner for Personal Data Protection of the Republic of Cyprus (<a href="https://www.dataprotection.gov.cy" rel="noopener">dataprotection.gov.cy</a>) or to the supervisory authority in your own country.</p>
+
+      <h2>Children</h2>
+      <p>Carob Health is intended for adults managing their own health. It is not directed at children, and we do not knowingly collect — or, given how the app works, have any way to collect — data from them.</p>
+      <!-- Decision pending: see terms.html "Who may use the app" and the launch checklist. -->
+
+      <h2>Changes</h2>
+      <p>If we change this policy, the version and effective date at the top will change, and the app will tell you before the new version applies to you. Previous versions remain available on this site.</p>
+
+      <h2>Contact</h2>
+      <address>
+        ANTERE SOFTWARE LTD<br>
+        Promachon Eleftherias 9, Rebeca Court, 2nd floor<br>
+        Agios Athanasios, 4103 Limassol, Cyprus<br>
+        <a href="mailto:support@anteresoftware.com">support@anteresoftware.com</a>
+      </address>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2026 Antere Software Ltd</div>
+    <nav aria-label="Legal">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/support.html">Support</a>
+    </nav>
+  </footer>
+
+</div>
+</body>
+</html>
