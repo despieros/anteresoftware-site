@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <script>if(/[?&]embed(=|&|$)/.test(location.search))document.documentElement.classList.add('embed')</script>
   <title>Carob Health privacy policy — Antere Software</title>
-  <meta name="description" content="Privacy policy for the Carob Health app: all data stays on your device, encrypted; no account, no server, no analytics.">
+  <meta name="description" content="Privacy policy for the Carob Health app: your medical data stays on your device, encrypted, with no account and no server. The app sends only anonymised crash reports and usage statistics, which you can turn off.">
   <link rel="stylesheet" href="/style.css?v=2">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
@@ -24,11 +24,12 @@
 
   <main class="page">
     <h1>Carob Health privacy policy</h1>
-    <p class="meta">Version 2026-10-18. Effective 18 October 2026.</p>
+    <p class="meta">Version 2026-11-09. Effective 9 November 2026.</p>
 
     <div class="prose">
       <h2>The short version</h2>
-      <p>Carob Health keeps everything on your phone. There is no account, no server and no analytics. We — Antere Software Ltd — never receive your data, cannot see it, and cannot recover it. The only way data leaves your device is when you export or share it yourself.</p>
+      <p>Carob Health keeps your medical data, documents and entries on your phone. There is no account and no server for them. We — Antere Software Ltd — never receive them, cannot see them, and cannot recover them. The only way they leave your device is when you export or share them yourself.</p>
+      <p>The app sends us one kind of thing: technical data — crash reports and anonymised usage statistics — so that we can keep it working and make it better. That data contains nothing you entered, and you can turn it off at any time. The details are in <a href="#telemetry">Crash reports and usage statistics</a>.</p>
       <p>The rest of this policy explains that in the detail the law and the app stores require.</p>
 
       <h2>Who we are</h2>
@@ -48,20 +49,28 @@
       <p>Much of this is health data, which the GDPR treats as a special category. Because it is stored and processed only on your device under your control, we do not process it, and no one at Antere has access to it. The app does not back it up to iCloud or Google's cloud backup: it is excluded from system backups on both platforms.</p>
 
       <h2>What leaves your device</h2>
-      <p>Nothing, unless you send it. Specifically:</p>
+      <p>Your medical data, documents and entries: nothing, unless you send them. Specifically:</p>
       <ul>
         <li><strong>Backups.</strong> You can export an encrypted backup file (.mhb), protected by a passphrase you choose. You decide where to save or send it. We cannot open it and cannot recover the passphrase.</li>
         <li><strong>Reports and the allergy card.</strong> You can create a PDF report for a doctor or share your allergy card. These go wherever you send them. The allergy card contains only your allergies and their severity — no name and no other identifying details.</li>
         <li><strong>Links and phone numbers.</strong> Tapping a doctor's phone number or address opens your phone or maps app. The app passes only that number or address.</li>
       </ul>
-      <p>The app does not contain analytics, advertising or crash-reporting software, and does not send usage or diagnostic data to us. If we ever add optional diagnostics, it will be off by default, limited to anonymous technical information, never include your health data or documents, and this policy will be updated first.</p>
+      <p>The app contains no advertising. It may send us crash reports and anonymised usage statistics — technical data that contains nothing you entered. What they include, who processes them and how to turn them off is described in the next section.</p>
+
+      <h2 id="telemetry">Crash reports and usage statistics</h2>
+      <p>Carob Health keeps all your medical data, documents and entries on your device only and never transfers them. To make the app more stable and better, from version 0.12.0 it may send us two categories of technical data. Both are on by default, and both can be turned off at any time: in Settings → Privacy and data, and on the screen shown at first launch.</p>
+      <p><strong>Crash reports.</strong> If the app terminates with an error, we receive: the error type and stack trace (file and function names of the program), the app version and build, the OS version and device model, language and time zone, a list of recent screen transitions (screen names without content), and technical session details (launch, background, exit) used to calculate the crash-free session rate. Reports never include your entries, names of medications, doctors or clinics, measurement values, documents, your name or profile, your IP address (not stored), or any user or device identifier. Error messages are automatically reduced to the error type before sending. Processor: Sentry (Functional Software, Inc., USA); data is received and stored on servers in the European Union (Germany) for 90 days; a data processing agreement is in place. Legal basis: our legitimate interest in keeping the app working (Article 6(1)(f) GDPR); you may object by turning crash reports off.</p>
+      <p><strong>Usage statistics.</strong> We receive anonymised events about which features are used: the event name and its categories (for example, "event completed — medication — from feed"), the app version, operating system, language, country (derived from the network address on receipt; the address itself is not stored), the week the app was installed and the number of days since installation. Counts are transferred as ranges ("2–5", "6–20"). The app uses no advertising or persistent device identifiers: a technical identifier changes every calendar day, so events from different days cannot be linked to one person. Statistics never include anything you entered. Processor: Amplitude, Inc. (USA), servers in the European Union; a data processing agreement is in place. Legal basis: our legitimate interest in improving the product (Article 6(1)(f) GDPR); when you turn statistics off, one final "statistics disabled" event is sent, after which transmission stops.</p>
+      <p><strong>Network.</strong> Apart from the two categories above, the app does not use the network to process your data: text recognition, encryption, backups and doctor reports run on the device.</p>
+      <p>The two processors, for the record:</p>
+      <ul>
+        <li><strong>Sentry</strong> — Functional Software, Inc., San Francisco, USA. Receives the crash reports described above. Data is received and stored in the European Union (Germany, EU data residency) and deleted after 90 days. A data processing agreement, including the European Commission's Standard Contractual Clauses, is part of Sentry's terms.</li>
+        <li><strong>Amplitude</strong> — Amplitude, Inc., San Francisco, USA. Receives the usage statistics events described above. Data is stored in the European Union (EU data centre) and kept for the standard retention period of our plan; what we work with are aggregates. A data processing agreement is in place.</li>
+      </ul>
+      <p>Both companies are based in the United States; the data itself is stored in the European Union, and each has signed a data processing agreement with us.</p>
 
       <h2>On-device processing</h2>
       <p>Text recognition (OCR) for pharmacy stickers and documents, and barcode scanning, run entirely on your device. The images you scan are not uploaded anywhere. On iOS the app uses Apple's built-in Vision framework; on Android it uses Google's ML Kit together with the open-source Tesseract engine, with the recognition models bundled inside the app.</p>
-      <p>On Android, Carob Health does not request the Internet permission, so neither the app nor any library inside it is able to send data over the network.</p>
-      <!-- IF ML Kit (GoogleMLKit pods) remains in the iOS build, replace the paragraph above with:
-      <p>On Android, Carob Health does not request the Internet permission, so neither the app nor any library inside it is able to send data over the network. On iOS, Google's ML Kit library may send anonymous usage and diagnostic information about itself (such as a device identifier and whether recognition succeeded) to Google; it never sends the images or the recognised text. See Google's ML Kit terms for details.</p>
-      -->
 
       <h2>Permissions the app asks for</h2>
       <ul>
@@ -76,15 +85,19 @@
       <p>Settings → Delete everything removes the database, all document files, both encryption keys, your settings and all scheduled reminders. Uninstalling the app has the same effect. Backup files and reports you saved or sent elsewhere are outside the app, and deleting them is up to you.</p>
 
       <h2>Your rights</h2>
-      <p>The GDPR gives you rights of access, rectification, erasure, restriction, portability and objection. For Carob Health, you exercise all of them directly in the app: everything it holds is visible on screen, editable, exportable as a backup, and deletable. We hold no copy of your data and cannot identify you from it, so there is nothing further for us to provide or delete — but if you have a question or believe something is wrong, write to <a href="mailto:support@anteresoftware.com">support@anteresoftware.com</a>. If you email us, we process your message and address to answer you, as described in our <a href="/privacy.html">website privacy policy</a>.</p>
+      <p>The GDPR gives you rights of access, rectification, erasure, restriction, portability and objection. For Carob Health, you exercise all of them directly in the app: everything it holds is visible on screen, editable, exportable as a backup, and deletable. We hold no copy of your medical data and cannot identify you from it, so there is nothing further for us to provide or delete — but if you have a question or believe something is wrong, write to <a href="mailto:support@anteresoftware.com">support@anteresoftware.com</a>. If you email us, we process your message and address to answer you, as described in our <a href="/privacy.html">website privacy policy</a>.</p>
+      <p>The technical data described in <a href="#telemetry">Crash reports and usage statistics</a> is different in one respect. The app has no accounts and no user identifiers, so we cannot tell which crash reports or statistics came from you: we are unable to link that data to a particular person, and therefore unable to find and delete "your" records on request. The way to stop the processing is to turn off the corresponding switch in the app (Settings → Privacy and data); from then on, nothing is sent. If you have questions about this, write to <a href="mailto:support@anteresoftware.com">support@anteresoftware.com</a>.</p>
       <p>You can complain to the Office of the Commissioner for Personal Data Protection of the Republic of Cyprus (<a href="https://www.dataprotection.gov.cy" rel="noopener">dataprotection.gov.cy</a>) or to the supervisory authority in your own country.</p>
 
       <h2>Children</h2>
-      <p>Carob Health is intended for adults managing their own health. It is not directed at children, and we do not knowingly collect — or, given how the app works, have any way to collect — data from them.</p>
+      <p>Carob Health is intended for adults managing their own health. It is not directed at children, and we do not knowingly collect personal data from them. The app has no accounts, and the technical data it sends carries no identifiers, so we have no way of knowing who its users are.</p>
       <!-- Decision pending: see terms.html "Who may use the app" and the launch checklist. -->
 
       <h2>Changes</h2>
       <p>If we change this policy, the version and effective date at the top will change, and the app will tell you before the new version applies to you. Previous versions remain available on this site.</p>
+      <ul>
+        <li>9 November 2026 (version 2026-11-09): added the section on crash reports and usage statistics and updated the statements about what the app sends. Previous version: <a href="/apps/carob-health/privacy/2026-10-18.html">2026-10-18</a>.</li>
+      </ul>
 
       <h2>Contact</h2>
       <address>

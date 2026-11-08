@@ -56,7 +56,8 @@ visitors don't get a cached stylesheet:
 
 - Add a public phone number if you want one shown (commented block in `index.html`).
 - If you host somewhere other than GitHub Pages, update the hosting provider named in `privacy.html`.
-- Carob Health: decide the ML Kit question (see launch checklist) and pick the matching
-  paragraph in `apps/carob-health/privacy.html`; decide the minimum age in `terms.html`.
+- Carob Health: the ML Kit telemetry question (see launch checklist) is still open — the privacy
+  policy describes Sentry and Amplitude but says nothing about ML Kit's own diagnostics; decide the
+  minimum age in `terms.html`.
 - When a policy changes: bump `version`/`effective` in `policy.json`, change the date at the
   top of the page, and keep the previous version at `apps/<app>/privacy/<old-version>.html`.
